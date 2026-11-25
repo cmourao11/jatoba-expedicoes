@@ -1,7 +1,5 @@
 import type { Attraction, Expedition, FaqItem, SeasonMonth } from '../types/expedition';
 
-const img = (filename: string) => `${import.meta.env.BASE_URL}images/${filename}`;
-
 export const BRAND_INFO = {
   name: 'Jatobá Expedições',
   handle: '@jatobaexpedicoes',
