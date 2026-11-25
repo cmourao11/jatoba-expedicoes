@@ -6,6 +6,7 @@ import { HeroSearch } from './components/HeroSearch';
 import { IncludedSection } from './components/IncludedSection';
 import { ItineraryModal } from './components/ItineraryModal';
 import { Navbar } from './components/Navbar';
+import { QuoteModal } from './components/QuoteModal';
 import { SeasonalityPlanner } from './components/SeasonalityPlanner';
 import { SocialAndFaq } from './components/SocialAndFaq';
 import { EXPEDITIONS } from './data/jatobaData';
@@ -114,14 +115,7 @@ export function App() {
 
         <SeasonalityPlanner onPickMonthForQuote={handlePickMonth} />
 
-        <SocialAndFaq
-          quoteModalOpen={quoteModalOpen}
-          selectedExpedition={quoteExpedition}
-          preselectedMonth={preferredMonth}
-          defaultTravelers={filters.travelers}
-          onCloseQuoteModal={() => setQuoteModalOpen(false)}
-          onOpenQuoteModal={handleOpenQuote}
-        />
+        <SocialAndFaq onOpenQuoteModal={handleOpenQuote} />
       </main>
 
       <ItineraryModal
@@ -136,6 +130,16 @@ export function App() {
         onClose={() => setCompareOpen(false)}
         onSelectQuote={(exp) => handleOpenQuote(exp)}
       />
+
+      {quoteModalOpen && (
+        <QuoteModal
+          key={`${quoteExpedition?.id ?? 'default'}-${preferredMonth}-${filters.travelers}`}
+          initialExpedition={quoteExpedition}
+          initialMonth={preferredMonth}
+          initialTravelers={filters.travelers}
+          onClose={() => setQuoteModalOpen(false)}
+        />
+      )}
     </div>
   );
 }

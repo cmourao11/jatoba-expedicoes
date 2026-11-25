@@ -1,5 +1,8 @@
 # Jatobá Expedições — Jalapão & Serras Gerais (TO)
 
+🌐 **Site Online (Produção):** https://cmourao11.github.io/jatoba-expedicoes/  
+📸 **Instagram Oficial:** https://www.instagram.com/jatobaexpedicoes/
+
 Plataforma web oficial da **Jatobá Expedições** (`@jatobaexpedicoes`), combinando a experiência de busca/comparação utilitária do **KAYAK** com a clareza de roteiros *all-inclusive* de ecoturismo da **Jalapão Oficial**.
 
 ## Destaques da Aplicação
@@ -9,15 +12,10 @@ Plataforma web oficial da **Jatobá Expedições** (`@jatobaexpedicoes`), combin
 - **Planejador Sazonal (12 Meses):** Consulta interativa de transparência dos rios, volume das cachoeiras e temperatura mês a mês.
 - **Simulador de Cotação Direta:** Gera resumo estruturado pronto para atendimento no canal oficial `@jatobaexpedicoes`.
 
-## Como Executar
+## Desenvolvimento e Build
 
 ```bash
 npm install
 npm run dev
-```
-
-## Build de Produção
-
-```bash
 npm run build
 ```

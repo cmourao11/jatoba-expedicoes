@@ -27,7 +27,7 @@ export function HeroSearch({ filters, onUpdateFilters, totalMatches }: HeroSearc
       {/* Editorial Background Image + High-Contrast Scrim */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <img
-          src="/images/hero-jalapao.jpg"
+          src="./images/hero-jalapao.jpg"
           alt=""
           className="w-full h-full object-cover object-center opacity-35"
         />

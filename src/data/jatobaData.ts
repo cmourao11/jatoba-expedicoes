@@ -35,7 +35,7 @@ export const EXPEDITIONS: Expedition[] = [
     difficulty: 'Leve',
     badge: 'Ideal para Feriados',
     featuredScore: 88,
-    image: '/images/cachoeira-formiga.jpg',
+    image: './images/cachoeira-formiga.jpg',
     imageAlt: 'Águas verde-esmeralda cristalinas da Cachoeira da Formiga no Jalapão',
     idealFor: 'Viajantes com agenda enxuta que não abrem mão dos ícones do Parque Estadual',
     mainAttractions: [
@@ -89,7 +89,7 @@ export const EXPEDITIONS: Expedition[] = [
     difficulty: 'Leve a Moderado',
     badge: 'Mais Procurado',
     featuredScore: 99,
-    image: '/images/fervedouro-jatoba.jpg',
+    image: './images/fervedouro-jatoba.jpg',
     imageAlt: 'Nascente cristalina azul-turquesa do Fervedouro Jatobá cercada por vegetação nativa',
     idealFor: 'Primeira viagem ao Jalapão com equilíbrio ideal entre aventura, flutuação e descanso',
     mainAttractions: [
@@ -151,7 +151,7 @@ export const EXPEDITIONS: Expedition[] = [
     difficulty: 'Moderado',
     badge: 'Joia Exclusiva',
     featuredScore: 95,
-    image: '/images/rio-azuis.jpg',
+    image: './images/rio-azuis.jpg',
     imageAlt: 'Águas transparentes em tom azul intenso do Rio Azuis em Aurora do Tocantins',
     idealFor: 'Apaixonados por rios subterrâneos, paredões de rocha, cavernas e natureza preservada',
     mainAttractions: [
@@ -212,7 +212,7 @@ export const EXPEDITIONS: Expedition[] = [
     modalities: ['compartilhado', 'privativo'],
     difficulty: 'Moderado',
     featuredScore: 91,
-    image: '/images/hero-jalapao.jpg',
+    image: './images/hero-jalapao.jpg',
     imageAlt: 'Dunas douradas do Jalapão ao pôr do sol com a Serra do Espírito Santo ao fundo',
     idealFor: 'Fotógrafos, casais e grupos que desejam curtir cada fervedouro com calma e subir o mirante ao amanhecer',
     mainAttractions: [
@@ -281,7 +281,7 @@ export const EXPEDITIONS: Expedition[] = [
     modalities: ['privativo', 'compartilhado'],
     difficulty: 'Moderado',
     featuredScore: 89,
-    image: '/images/canion-encantado.jpg',
+    image: './images/canion-encantado.jpg',
     imageAlt: 'Quatro quedas d’água simultâneas nos paredões de arenito do Cânion Encantado',
     idealFor: 'Exploradores que buscam trilhas cênicas, cavernas e os cenários mais fotogênicos do sudeste do TO',
     mainAttractions: [
@@ -346,7 +346,7 @@ export const EXPEDITIONS: Expedition[] = [
     difficulty: 'Moderado',
     badge: 'Expedição Assinatura',
     featuredScore: 97,
-    image: '/images/lagoa-japones.jpg',
+    image: './images/lagoa-japones.jpg',
     imageAlt: 'Gruta calcária de águas azul-turquesa na conexão entre Serras Gerais e Jalapão',
     idealFor: 'Férias completas para viver 100% da diversidade entre fervedouros, dunas, cânions e rios azuis',
     mainAttractions: [
@@ -420,7 +420,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'São Félix do Tocantins',
     region: 'Jalapão',
     tag: 'Ressurgência Cristalina',
-    image: '/images/fervedouro-jatoba.jpg',
+    image: './images/fervedouro-jatoba.jpg',
     description:
       'Cercado por buritis e vegetação nativa preservada, a pressão da nascente subterrânea impede qualquer pessoa de afundar em uma experiência de gravidade zero.',
     guideTip: 'Acesso controlado por pequenos grupos de cada vez para preservar o silêncio e a transparência absoluta.',
@@ -431,7 +431,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'Aurora do Tocantins',
     region: 'Serras Gerais',
     tag: 'Menor Rio da América Latina',
-    image: '/images/rio-azuis.jpg',
+    image: './images/rio-azuis.jpg',
     description:
       'Brotando diretamente das rochas calcárias com um tom azul-neon hipnotizante, percorre apenas 147 metros antes de desaguar no Rio Sobrado.',
     guideTip: 'Não é permitido entrar com protetor solar ou repelente químico; visitamos logo cedo com incidência solar perfeita.',
@@ -442,7 +442,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'Mateiros',
     region: 'Jalapão',
     tag: 'Pôr do Sol Clássico',
-    image: '/images/hero-jalapao.jpg',
+    image: './images/hero-jalapao.jpg',
     description:
       'Bancos de areia dourada originados da erosão da Serra do Espírito Santo, emoldurados por lagoas sazonais, veredas de buritis e o céu imenso do Cerrado.',
     guideTip: 'Nossos guias organizam o deslocamento para chegar antes do pico de visitantes e aproveitar a hora dourada.',
@@ -453,7 +453,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'Pindorama do Tocantins',
     region: 'Serras Gerais',
     tag: 'Gruta & Snorkel',
-    image: '/images/lagoa-japones.jpg',
+    image: './images/lagoa-japones.jpg',
     description:
       'Divisa natural entre o Jalapão e as Serras Gerais: águas metade esmeralda, metade azul-turquesa que conduzem a uma caverna calcária iluminada pelo sol.',
     guideTip: 'Sapatilha aquática é indispensável (disponível também para locação no atrativo). Leve máscara de mergulho!',
@@ -464,7 +464,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'Almas',
     region: 'Serras Gerais',
     tag: '4 Quedas de 70 Metros',
-    image: '/images/canion-encantado.jpg',
+    image: './images/canion-encantado.jpg',
     description:
       'Um anfiteatro colossal esculpido no arenito onde até quatro cachoeiras despencam ao mesmo tempo em um poço selvagem e isolado.',
     guideTip: 'Trilha guiada com nossos condutores credenciados e monitoramento meteorológico rigoroso de segurança.',
@@ -475,7 +475,7 @@ export const ATTRACTIONS: Attraction[] = [
     municipality: 'Mateiros',
     region: 'Jalapão',
     tag: 'Piscina Esmeralda',
-    image: '/images/cachoeira-formiga.jpg',
+    image: './images/cachoeira-formiga.jpg',
     description:
       'Queda d’água acolhedora com temperatura amena o ano inteiro e fundo de areia calcária branca que revela cada detalhe sob a água.',
     guideTip: 'As quedas formam hidromassagens naturais; excelente parada após a manhã nos fervedouros.',
