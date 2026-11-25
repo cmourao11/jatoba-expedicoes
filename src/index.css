@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #FAF8F5;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F2EFE9;
+    --bg-ink: #131917;
+    --text-primary: #131917;
+    --text-secondary: #4D5753;
+    --border-default: #E4DFD5;
+    --brand-jatoba: #D94E1F;
+    --brand-jatoba-hover: #B83D14;
+    --brand-fervedouro: #0B6E69;
+    --brand-fervedouro-soft: #E5F3F2;
+    --brand-ouro: #C68928;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-jatoba);
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
