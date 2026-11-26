@@ -1,3 +1,4 @@
+import { MessageSquareText } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { AttractionsShowcase } from './components/AttractionsShowcase';
 import { CompareModal } from './components/CompareModal';
@@ -117,6 +118,20 @@ export function App() {
 
         <SocialAndFaq onOpenQuoteModal={handleOpenQuote} />
       </main>
+
+      {/* Persistent Conversion Floating Button */}
+      {compareIds.length === 0 && (
+        <button
+          type="button"
+          data-clickmax-cta="floating-quote"
+          onClick={() => handleOpenQuote()}
+          className="fixed bottom-5 right-5 z-30 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#D94E1F] hover:bg-[#B83D14] text-white text-xs sm:text-sm font-extrabold shadow-xl border border-white/15 transition-colors cursor-pointer"
+          aria-label="Solicitar cotação rápida da expedição"
+        >
+          <MessageSquareText className="w-4 h-4 shrink-0" aria-hidden="true" />
+          <span>Cotar Expedição 4x4</span>
+        </button>
+      )}
 
       <ItineraryModal
         expedition={detailExpedition}

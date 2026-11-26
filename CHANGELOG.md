@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.0] - 2026-11-26
+## [1.3.0] - 2026-11-26
 
 ### Adicionado
-- Gerador automatizado (`npm run build:clickmax` em `scripts/build-clickmax.mjs`) e pacote standalone em arquivo único `clickmax/jatoba-expedicoes-clickmax.html` (CSS e JS embutidos + imagens servidas via HTTPS CDN) pronto para importação direta de página inteira no **Clickmax** (`clickmax.io`).
+- Pré-renderização estática completa no build (`src/entry-server.tsx` + hidratação em `src/main.tsx`), injetando 100% do HTML semântico renderizado em `dist/index.html` e em `clickmax/jatoba-expedicoes-clickmax.html` (visível e editável nativamente no editor visual / clonador de URL do **Clickmax**, com fallback Vanilla JS, dados estruturados Schema.org `TravelAgency`, OpenGraph e botão flutuante de cotação rápida).

@@ -1,10 +1,28 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+declare global {
+  interface Window {
+    __JATOBA_REACT_MOUNTED__?: boolean;
+  }
+}
+
+const container = document.getElementById('root')!;
+window.__JATOBA_REACT_MOUNTED__ = true;
+
+if (container.hasChildNodes()) {
+  hydrateRoot(
+    container,
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+} else {
+  createRoot(container).render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+}

@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:clickmax": "npm run build && node scripts/build-clickmax.mjs",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/build-clickmax.mjs",
+    "build:clickmax": "npm run build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
