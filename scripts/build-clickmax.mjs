@@ -28,12 +28,12 @@ const safeJs = jsContent.replace(/<\/script>/gi, '<\\/script>');
 // Remove external script/css tags from Vite HTML
 html = html.replace(/<script[^>]*src="[^"]*assets\/[^"]*\.js"[^>]*><\/script>\s*/g, '');
 html = html.replace(/<link[^>]*href="[^"]*assets\/[^"]*\.css"[^>]*>\s*/g, '');
-html = html.replace('href="./favicon.svg"', `href="${cdnBase}favicon.svg"`);
+html = html.replace('href="./favicon.svg"', () => `href="${cdnBase}favicon.svg"`);
 
-// Inject inline CSS + Clickmax SDK placeholder in <head>, and inline module JS before </body>
+// Use callback replacers to avoid $& / $` expansion in minified bundles
 const headInjection = `    <!-- Clickmax SDK / Pixel: cole seu script do Clickmax logo abaixo se desejar rastreamento de funil -->\n    <style>${cssContent}</style>\n  </head>`;
-html = html.replace('</head>', headInjection);
-html = html.replace('</body>', `    <script type="module">${safeJs}</script>\n  </body>`);
+html = html.replace('</head>', () => headInjection);
+html = html.replace('</body>', () => `    <script type="module">${safeJs}</script>\n  </body>`);
 
 const outPath = path.join(outDir, 'jatoba-expedicoes-clickmax.html');
 fs.writeFileSync(outPath, html, 'utf8');
