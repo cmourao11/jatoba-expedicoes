@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.0] - 2026-11-25
+## [1.2.0] - 2026-11-26
 
 ### Adicionado
-- Publicação online do site oficial da **Jatobá Expedições** (`@jatobaexpedicoes`) em URL pública via **GitHub Pages** (`https://cmourao11.github.io/jatoba-expedicoes/`) a partir do repositório `cmourao11/jatoba-expedicoes` e manifesto `vercel.json` com headers de segurança pronto para integração contínua.
+- Gerador automatizado (`npm run build:clickmax` em `scripts/build-clickmax.mjs`) e pacote standalone em arquivo único `clickmax/jatoba-expedicoes-clickmax.html` (CSS e JS embutidos + imagens servidas via HTTPS CDN) pronto para importação direta de página inteira no **Clickmax** (`clickmax.io`).
